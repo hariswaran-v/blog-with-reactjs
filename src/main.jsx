@@ -1,12 +1,11 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import HomePage from "./pages/HomePage";
-import { BrowserRouter, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
+import GuestLayot from "./layout/Guest";
 
-const routers = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <GuestLayot />,
@@ -18,5 +17,5 @@ const routers = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter router={routers} />
+  <RouterProvider router={router} />
 );

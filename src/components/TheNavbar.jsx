@@ -23,15 +23,15 @@ const TheNavbar = () => {
         </svg>
         <h4 className="text-2xl font-semibold ">Welcome to TechSphere</h4>
       </div>
-      <div className="flex items-center">
+      <div className="p-4 flex items-center space-x-4 rounded">
         {/* linkedin */}
         <a href="https://www.linkedin.com/feed/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
+            width="1.5em"
+            height="1.5em"
             viewBox="0 0 24 24"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-blue-600 transition duration-300 hover:scale-110 "
           >
             <path
               fill="currentColor"
@@ -39,12 +39,14 @@ const TheNavbar = () => {
             ></path>
           </svg>
         </a>
+        {/* Github */}
         <a href="https://github.com/hariswaran-v">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
+            width="1.5em"
+            height="1.5em"
             viewBox="0 0 24 24"
+            className="hover:text-orange-500 transition duration-300 hover:scale-110"
           >
             <path
               fill="currentColor"
@@ -52,7 +54,42 @@ const TheNavbar = () => {
             ></path>
           </svg>
         </a>
+        {/* Facebook */}
+        <a href="https://www.facebook.com/profile.php?id=100008652420742">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.5em"
+            height="1.5em"
+            viewBox="0 0 24 24"
+            className="hover:text-blue-500 transition duration-300 hover:scale-110"
+          >
+            <path
+              fill="currentColor"
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+            ></path>
+          </svg>
+        </a>
+        {/* Instagram */}
+        <a href="https://www.instagram.com/hariswaran.venkatesh/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.5em"
+            height="1.5em"
+            viewBox="0 0 512 512"
+            className="hover:text-pink-500 transition duration-300 hover:scale-110"
+          >
+            <path
+              fill="currentColor"
+              d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34zm0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28M256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112"
+            ></path>
+          </svg>
+        </a>
       </div>
+
       <ul className="flex space-x-8 bg-red font-semibold text-lg mr-10">
         <li>Home</li>
         <li>Team</li>

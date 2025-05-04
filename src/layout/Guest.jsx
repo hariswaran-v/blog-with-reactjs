@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import TheNavbar from "../components/TheNavbar";
 
 const GuestLayot = () => {
@@ -10,6 +11,7 @@ const GuestLayot = () => {
         <AboutPage />
         <ContactPage />
         <TeamPage /> */}
+        <Outlet />
       </div>
     </div>
   );
