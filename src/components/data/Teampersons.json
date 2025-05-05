@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Rajinikanth",
+    "role": "Actor",
+    "image": "https://i.pinimg.com/736x/16/cf/9c/16cf9c2006d6b0d7731799106d9aec2b.jpg",
+    "link": "https://en.wikipedia.org/wiki/Rajinikanth"
+  },
+  {
+    "id": 2,
+    "name": "Kamal Haasan",
+    "role": "Actor, Director",
+    "image": "https://i.pinimg.com/736x/a9/d3/c6/a9d3c610dcc80e67c8e265257772e276.jpg",
+    "link": "https://en.wikipedia.org/wiki/Kamal_Haasan"
+  },
+  {
+    "id": 3,
+    "name": "Vijay",
+    "role": "Actor, Singer",
+    "image": "https://i.pinimg.com/736x/16/b6/53/16b65381aaf7ed3ecd30c96c30234b89.jpg",
+    "link": "https://en.wikipedia.org/wiki/Vijay_(actor)"
+  },
+  {
+    "id": 4,
+    "name": "Ajith Kumar",
+    "role": "Actor, Racer",
+    "image": "https://i.pinimg.com/736x/49/e4/4f/49e44f1785549f9d2f1edc8a7453bb5c.jpg",
+    "link": "https://en.wikipedia.org/wiki/Ajith_Kumar"
+  },
+  {
+    "id": 5,
+    "name": "Suriya",
+    "role": "Actor, Producer",
+    "image": "https://i.pinimg.com/736x/97/d0/8b/97d08bfed01ab5ab77c9b27e255f6fdb.jpg",
+    "link": "https://en.wikipedia.org/wiki/Suriya"
+  },
+  {
+    "id": 6,
+    "name": "Dhanush",
+    "role": "Actor, Singer, Director",
+    "image": "https://i.pinimg.com/736x/51/41/5f/51415f04e1e60ec599d30c1b6d7517af.jpg",
+    "link": "https://en.wikipedia.org/wiki/Dhanush"
+  },
+  {
+    "id": 7,
+    "name": "Vikram",
+    "role": "Actor, Playback Singer",
+    "image": "https://i.pinimg.com/736x/47/5b/06/475b0667d40478bf36092ccb38b44594.jpg",
+    "link": "https://en.wikipedia.org/wiki/Vikram_(actor)"
+  },
+  {
+    "id": 8,
+    "name": "Sivakarthikeyan",
+    "role": "Actor, Lyricist",
+    "image": "https://i.pinimg.com/736x/9b/2f/e2/9b2fe28648021988b8c6960bf1e192af.jpg",
+    "link": "https://en.wikipedia.org/wiki/Sivakarthikeyan"
+  },
+  {
+    "id": 9,
+    "name": "Jayam Ravi",
+    "role": "Actor",
+    "image": "https://i.pinimg.com/736x/70/33/ee/7033ee222f5be32321dcee04520f3add.jpg",
+    "link": "https://en.wikipedia.org/wiki/Jayam_Ravi"
+  },
+  {
+    "id": 10,
+    "name": "Vijay Sethupathi",
+    "role": "Actor, Producer",
+    "image": "https://i.pinimg.com/736x/0b/d7/fc/0bd7fcfc5c7733b58e22763dbbab1015.jpg",
+    "link": "https://en.wikipedia.org/wiki/Vijay_Sethupathi"
+  }
+]
