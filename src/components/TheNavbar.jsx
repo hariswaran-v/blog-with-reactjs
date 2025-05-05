@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TheNavbar = () => {
   return (
     <div className=" bg-green-600 p-3 text-white flex items-center justify-between">
@@ -23,6 +25,7 @@ const TheNavbar = () => {
         </svg>
         <h4 className="text-2xl font-semibold ">Welcome to TechSphere</h4>
       </div>
+      {/* Social icons div */}
       <div className="p-4 flex items-center space-x-4 rounded">
         {/* linkedin */}
         <a href="https://www.linkedin.com/feed/">
@@ -91,10 +94,18 @@ const TheNavbar = () => {
       </div>
 
       <ul className="flex space-x-8 bg-red font-semibold text-lg mr-10">
-        <li>Home</li>
-        <li>Team</li>
-        <li>Contact</li>
-        <li>About</li>
+        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
+          <Link to={"/team"}>Team</Link>
+        </li>
+        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
+          <Link to={"/contact"}>Contact</Link>
+        </li>
+        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
+          <Link to={"/about"}>About</Link>
+        </li>
       </ul>
     </div>
   );

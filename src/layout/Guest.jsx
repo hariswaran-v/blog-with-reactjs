@@ -1,20 +1,13 @@
 import { Outlet } from "react-router-dom";
 import TheNavbar from "../components/TheNavbar";
 
-const GuestLayot = () => {
+const GuestLayout = () => {
   return (
-    <div className="bg-gray-400 min-h-screen">
+    <div className="bg-gray-300 min-h-screen">
       <TheNavbar />
-      <div className="bg-white border rounded p-10 max-w-xl mx-auto m-10">
-        <h4>Working</h4>
-        {/* <HomePage />
-        <AboutPage />
-        <ContactPage />
-        <TeamPage /> */}
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 };
 
-export default GuestLayot;
+export default GuestLayout;
