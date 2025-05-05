@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const TheNavbar = () => {
   return (
-    <div className=" bg-green-600 p-3 text-white flex items-center justify-between">
+    <div className=" bg-slate-800 p-3 text-white flex items-center justify-between">
       <Link className="flex items-center space-x-3 bg-gray-500 p-2 rounded ">
         <svg
           xmlns="http://www.w3.org/2000/svg"

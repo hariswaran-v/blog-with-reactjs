@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import TeamcardPage from "../components/Teamcard";
 const AboutPage = () => {
   const { name } = useParams();
   return (
@@ -7,6 +8,7 @@ const AboutPage = () => {
       <div className="bg-white p-10 rounded">
         <h5>Welcome {name ? name : "Guest"} , this is about page</h5>
       </div>
+      <TeamcardPage />
     </div>
   );
 };
