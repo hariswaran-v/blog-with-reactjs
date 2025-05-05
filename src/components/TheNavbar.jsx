@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const TheNavbar = () => {
   return (
     <div className=" bg-green-600 p-3 text-white flex items-center justify-between">
-      <div className="flex items-center space-x-3 bg-gray-500 p-2 rounded ">
+      <Link className="flex items-center space-x-3 bg-gray-500 p-2 rounded ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="3em"
@@ -24,7 +24,7 @@ const TheNavbar = () => {
           ></path>
         </svg>
         <h4 className="text-2xl font-semibold ">Welcome to TechSphere</h4>
-      </div>
+      </Link>
       {/* Social icons div */}
       <div className="p-4 flex items-center space-x-4 rounded">
         {/* linkedin */}
