@@ -9,7 +9,7 @@ const TheNavbar = () => {
     { path: "/about", label: "About" },
   ];
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-slate-800 p-3 text-white flex items-center justify-between">
+    <div className="fixed top-0 left-0 w-full z-50 bg-slate-800 p-3 rounded-t text-white flex items-center justify-between">
       <Link className="flex items-center space-x-3 bg-gray-500 p-2 rounded ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const TheNavbar = () => {
         </h4>
       </Link>
 
-      <div className="bg-slate-800 p-3 text-white flex justify-between items-center">
+      <div className="bg-slate-800 p-3  text-white flex justify-between items-center">
         <NavbarLinks links={links} />
       </div>
 

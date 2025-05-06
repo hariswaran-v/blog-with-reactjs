@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-slate-800 p-10 space-x-3 flex items-center justify-center">
+    <div className="bg-slate-800 p-7 rounded-b space-x-3 flex items-center justify-center">
       <p className="text-white">
         Designed by Hariswaran Venkatesh for CyberDude Networks Internship
         Programme

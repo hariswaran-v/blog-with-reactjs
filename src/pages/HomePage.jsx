@@ -8,7 +8,6 @@ const HomePage = () => {
       const postJson = await fetchedPosts.json();
 
       setPosts(postJson.posts);
-      console.log(postJson);
     };
     fetchPosts();
   }, []);
@@ -16,18 +15,18 @@ const HomePage = () => {
   const blogPostsTemplate = posts.map((post) => {
     return (
       <div
-        className="bg-white flex items-center space-x-5 p-5 rounded shadow mb-4"
+        className="bg-white  items-center max-w-xl mx-auto p-5 rounded shadow mb-4"
         key={post.id}
       >
         <img
-          src={post.image}
+          src="https://i.pinimg.com/736x/57/46/8d/57468d8387042651790a73ade6a0d224.jpg"
           alt="React logo"
-          className="w-16 h-16 rounded-full"
+          className="rounded"
         />
         <div>
-          <h4 className="font-semibold mb-4">{post.title}</h4>
+          <h4 className="font-semibold mt-3 mb-4">{post.title}</h4>
           <p className="text-gray-700">{post.body}</p>
-          <div className="flex items-center gap-x-2 mt-2">
+          <div className="flex  items-center gap-x-2 mt-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -58,16 +57,31 @@ const HomePage = () => {
     );
   });
   return (
-    <div className=" p-10 space-y-5">
-      <h1 className="font-semibold text-2xl mb-2">Recent Blogs</h1>
-      <div>
+    <div className="py-10">
+      <div className="p-10 mt-10">
         <img
           src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Welcome banner"
-          className="w-full h-96  object-cover rounded"
+          className="w-full h-96 object-cover rounded"
         />
+        <h1 className="font-semibold text-2xl mt-7">Recent Blogs</h1>
       </div>
-      {blogPostsTemplate}
+
+      {/* Main content area: cards left, info right */}
+      <div className="px-6 flex gap-6">
+        {/* Blog cards left */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {blogPostsTemplate}
+        </div>
+
+        {/* Info right */}
+        <div className="w-full max-w-sm sticky top-32 self-start bg-white p-5 rounded shadow h-fit">
+          <h4 className="text-xl font-semibold mb-4">Right Side Info Panel</h4>
+          <p className="text-gray-600">
+            You can place recent updates, popular posts, or author details here.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
