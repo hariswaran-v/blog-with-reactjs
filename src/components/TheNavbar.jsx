@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import NavbarLinks from "../components/PageComponents";
 
 const TheNavbar = () => {
+  const links = [
+    { path: "/", label: "Home" },
+    { path: "/team", label: "Team" },
+    { path: "/contact", label: "Contact" },
+    { path: "/about", label: "About" },
+  ];
   return (
-    <div className=" bg-slate-800 p-3 text-white flex items-center justify-between">
+    <div className="fixed top-0 left-0 w-full z-50 bg-slate-800 p-3 text-white flex items-center justify-between">
       <Link className="flex items-center space-x-3 bg-gray-500 p-2 rounded ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +30,15 @@ const TheNavbar = () => {
             d="M162.317 150.441c4.233 3.953 3.34 10.99-1.761 13.88l-5.243.853l-30.939.358c-20.86.195-27.128-.216-28.409-.724l-.04-.017c-2.518-1.097-4.862-4.143-5.267-6.845c-.386-2.573.908-6.11 2.89-7.905l.441-.384c1.954-1.605 4.202-1.893 22.635-1.958l21.317-.022c21.549.016 21.738.301 24.376 2.764M131.944 92.09c3.286 1.66 4.714 4 4.714 7.727c0 3.236-1.24 5.54-3.994 7.398l-.534.341c-1.34.8-2.654.939-13.041 1.02l-6.703.038c-8.309.017-14.705-.157-15.727-.439c-5.864-1.616-8.055-10.029-3.745-14.38l.401-.398c2.307-2.235 3.775-2.466 17.292-2.487l10.186.008c8.608.04 9.295.235 11.151 1.172"
           ></path>
         </svg>
-        <h4 className="text-2xl font-semibold ">Welcome to TechSphere</h4>
+        <h4 className="text-2xl font-semibold font-montserrat">
+          Welcome to TechSphere
+        </h4>
       </Link>
+
+      <div className="bg-slate-800 p-3 text-white flex justify-between items-center">
+        <NavbarLinks links={links} />
+      </div>
+
       {/* Social icons div */}
       <div className="p-4 flex items-center space-x-4 rounded">
         {/* linkedin */}
@@ -92,21 +106,6 @@ const TheNavbar = () => {
           </svg>
         </a>
       </div>
-
-      <ul className="flex space-x-8 bg-red font-semibold text-lg mr-10">
-        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
-          <Link to={"/"}>Home</Link>
-        </li>
-        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
-          <Link to={"/team"}>Team</Link>
-        </li>
-        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
-          <Link to={"/contact"}>Contact</Link>
-        </li>
-        <li className="hover:cursor-pointer transition duration-300 hover:scale-110 ">
-          <Link to={"/about"}>About</Link>
-        </li>
-      </ul>
     </div>
   );
 };

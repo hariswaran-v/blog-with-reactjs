@@ -58,8 +58,15 @@ const HomePage = () => {
     );
   });
   return (
-    <div className="max-w-6xl mx-auto p-10">
+    <div className=" p-10 space-y-5">
       <h1 className="font-semibold text-2xl mb-2">Recent Blogs</h1>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Welcome banner"
+          className="w-full h-96  object-cover rounded"
+        />
+      </div>
       {blogPostsTemplate}
     </div>
   );
