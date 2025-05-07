@@ -1,3 +1,6 @@
+import FormInput from "../components/form/Form";
+import FormButton from "../components/FormButton/FormButton";
+
 const ContactPage = () => {
   return (
     <div className="pt-20 ">
@@ -107,8 +110,8 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-
-        <div className="max-w-6xl mx-auto p-3 m-10 bg-white flex flex-col lg:flex-row gap-10 rounded-lg">
+        {/* Form  */}
+        <div className="max-w-6xl mx-auto p-3 m-10 bg-sky-950 flex flex-col lg:flex-row gap-10 rounded-lg text-white">
           {/* Image */}
           <div>
             <img
@@ -119,35 +122,22 @@ const ContactPage = () => {
           </div>
 
           {/* Form */}
-          <div className="flex-1">
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          <div className="flex-1 space-y-5">
+            <div>
+              <FormInput
+                name="fullName" 
+                label="Fullname"
+                placeholder="Enter you full name"
               />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              <FormInput
+                name="emailAddress"
+                label="Email address"
+                placeholder="Enter your email address"
               />
-              <input
-                type="text"
-                placeholder="Your Subject"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <textarea
-                placeholder="Your Message"
-                rows="4"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
-              >
-                Send Message
-              </button>
-            </form>
+            </div>
+            <div>
+              <FormButton text="Submit" />
+            </div>
           </div>
         </div>
       </div>
