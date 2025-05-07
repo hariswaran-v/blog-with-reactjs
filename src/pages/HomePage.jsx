@@ -15,7 +15,7 @@ const HomePage = () => {
   const blogPostsTemplate = posts.map((post) => {
     return (
       <div
-        className="bg-white  items-center max-w-xl mx-auto p-5 rounded shadow mb-4"
+        className="bg-white  items-center max-w-xl mx-auto p-3 rounded shadow mb-4"
         key={post.id}
       >
         <img
@@ -58,24 +58,24 @@ const HomePage = () => {
   });
   return (
     <div className="py-10">
-      <div className="p-10 mt-10">
+      <div className="p-10 mt-6">
         <img
           src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Welcome banner"
           className="w-full h-96 object-cover rounded"
         />
-        <h1 className="font-semibold text-2xl mt-7">Recent Blogs</h1>
+        <h1 className="font-semibold text-2xl mt-5">Recent Blogs</h1>
       </div>
 
       {/* Main content area: cards left, info right */}
-      <div className="px-6 flex gap-6">
+      <div className="px-10 flex gap-6">
         {/* Blog cards left */}
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPostsTemplate}
         </div>
 
         {/* Info right */}
-        <div className="flex flex-col justify-center items-center w-full max-w-sm sticky top-32 self-start bg-white p-5 rounded shadow h-fit ">
+        <div className="flex flex-col justify-center items-center w-full max-w-sm sticky self-start bg-white p-5 rounded shadow h-fit ">
           <div className=" space-y-3">
             <img
               src="https://github.com/hariswaran-v.png"
@@ -98,10 +98,10 @@ const HomePage = () => {
               real-world problems through code.
             </p>
             <h4 className="font-semibold border-b-4 border-slate-800 pb-2 ">
-              CONTACT US
+              CONTACT ME
             </h4>
             {/* Social icons div */}
-            <div className="p-4 flex items-center space-x-12 rounded">
+            <div className="px-4  flex items-center  space-x-12 rounded">
               {/* linkedin */}
               <a href="https://www.linkedin.com/feed/">
                 <svg
@@ -188,23 +188,53 @@ const HomePage = () => {
             <h4 className="font-semibold border-b-4 border-slate-800 pb-2 ">
               SKILLS
             </h4>
-            <div className="grid grid-cols-4 gap-2">
-              <span className=" bg-red-500 px-1 py-2 rounded text-white font-semibold">
-                JavaScript
-              </span>
-              <span className=" bg-red-500 px-1 py-2 rounded text-white font-semibold">
-                JavaScript
-              </span>
-              <span className=" bg-red-500 px-1 py-2 rounded text-white font-semibold">
-                JavaScript
-              </span>
-              <span className=" bg-red-500 px-1 py-2 rounded text-white font-semibold">
-                JavaScript
-              </span>
-              <span className=" bg-red-500 px-1 py-2 rounded text-white font-semibold">
-                JavaScript
-              </span>
-            </div>
+            <ul className="flex flex-wrap gap-2 justify-evenly list-none font-semibold">
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-primary">HTML</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-secondary">CSS</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-success">JavaScript</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-danger">React.js</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-warning text-dark">Node.js</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-info text-dark">MongoDB</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-dark">Express.js</span>
+              </li>
+            </ul>
+            <h4 className="font-semibold border-b-4 border-slate-800 pb-2 ">
+              LANGUAGE
+            </h4>
+            <ul className="flex flex-wrap gap-2 justify-evenly list-none font-semibold">
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-primary">Tamil</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-secondary">English</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-500"></span>
+                <span className="badge bg-success">Telugu</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

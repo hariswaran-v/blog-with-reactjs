@@ -1,17 +1,15 @@
-import { useParams } from "react-router-dom";
 import Accordion from "../components/Accordion";
 import PropTypes from "prop-types";
 
 const AboutPage = () => {
-  const { name } = useParams();
-
   return (
-    <div>
-      <div className="m-10 p-10 bg-white rounded">
-        <h4 className="font-semibold text-xl mb-3">About</h4>
-        <div>
-          <h5>Welcome {name ? name : "Guest"}, this is About page!</h5>
-        </div>
+    <div className="pt-16">
+      <div className="m-10  bg-white rounded">
+        <img
+          src="https://i.pinimg.com/736x/84/de/68/84de6842cc4a4813c91a41765e68b75c.jpg"
+          alt="contact"
+          className="w-full h-96 object-cover rounded"
+        />
       </div>
       <div className="m-10 p-10 bg-white rounded ">
         <h4 className="font-semibold text-xl">FAQs</h4>
